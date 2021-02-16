@@ -189,8 +189,8 @@ minetest.register_chatcommand( "debug", {
 	privs = { server = true },
 	func = function( name, param )
 		local formspec = "size[11.0,7.8]"
-			.. minetest.gui_bg
-			.. minetest.gui_bg_img
+			.. default.gui_bg
+			.. default.gui_bg_img
 
 		formspec = formspec .. "textarea[0.3,0.5;11.0,7.5;buffer;Debug History;"
 
